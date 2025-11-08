@@ -1,2 +1,0 @@
-python3.9.25
-python3.9.25-dev
