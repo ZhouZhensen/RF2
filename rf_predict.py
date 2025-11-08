@@ -25,7 +25,7 @@ feature_names = [
 st.title("123")
 
 # Age: numerical input
-age = st.number_input("Age:", min_value=0, max_value=120, value=41)
+age = st.number_input("Age:", min_value=0, max_value=120, value=45)
 
 # Sex: categorical selection
 sex = st.selectbox("Sex:", options=[0, 1], format_func=lambda x: "Male" if x == 1 else "Female")
@@ -131,4 +131,5 @@ if st.button("Predict"):
     lime_html = lime_exp.as_html(show_table=False)  # Disable feature value table
 
     st.components.v1.html(lime_html, height=800, scrolling=True)
+
 
