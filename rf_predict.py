@@ -22,7 +22,7 @@ feature_names = [
 ]
 
 # Streamlit user interface
-st.title("Heart Disease Predictor")
+st.title("Heart Disease Predictor123")
 
 # Age: numerical input
 age = st.number_input("Age:", min_value=0, max_value=120, value=41)
@@ -129,4 +129,5 @@ if st.button("Predict"):
 
     # Display the LIME explanation without the feature value table
     lime_html = lime_exp.as_html(show_table=False)  # Disable feature value table
+
     st.components.v1.html(lime_html, height=800, scrolling=True)
